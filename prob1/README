@@ -1,0 +1,87 @@
+# Analysis of U.S. Food Commodity Consumption (1994-2008)
+
+The goal of this project is to create line plots in Python to visualize trends in U.S. food consumption for specific demographics and food categories over different time periods. We will use `pandas` to extract the data and `matplotlib` to generate the plots.
+
+---
+
+## Data Source
+
+* **Publication:** U.S. Food Commodity Availability by Food Source, 1994-2008
+* **Source URL:** [https://www.ers.usda.gov/publications/pub-details/?pubid=81817](https://www.ers.usda.gov/publications/pub-details/?pubid=81817)
+* **File to Use:** You will need to download and use the **Appendix B: Consumption share tables** Excel file for this analysis.
+
+---
+
+## Data Structure
+
+The Excel file is structured across multiple worksheets and time periods.
+
+### Time Periods
+The data covers four distinct time periods:
+* 1994-1998
+* 2003-2004
+* 2005-2006
+* 2007-2008
+
+### Worksheets
+For each time period, the Excel file contains two worksheets: `Food At Home Consumption (FAH)` and `Food Away From Home (FAFH)`.
+**This project focuses exclusively on the `Food At Home (FAH)` data.**
+
+---
+
+## Task Overview
+
+The primary task is to extract food consumption data for men and women, focusing on specific fruit and dairy products, and create four line plots to visualize trends over time.
+
+### 1. Data Loading & Extraction
+
+* **Important:** Do **not** manually reformat the source Excel file. All data manipulation must be done programmatically.
+* Use the `pandas.read_excel()` function to load the data directly from the file.
+* You will need to use the `sheetname` parameter to select the correct `FAH` sheet for each of the four time periods.
+* From the raw DataFrames, extract only the necessary data points and create new, clean DataFrames with the required information and proper headers suitable for plotting.
+
+### 2. Data to Plot
+
+We will concentrate on the **at-home consumption** for **Men** and **Women** for the following food items.
+
+#### Fruit Types
+* Apples as fruit
+* Bananas
+* Berries
+* Grapes
+* Melons
+* Oranges, Total
+* Other citrus fruit
+* Stone fruit
+* Tropical fruit
+
+#### Dairy Products
+* Fluid milk total
+* Butter
+* Cheese
+* Yogurt
+* Dairy, Other
+
+### 3. Plotting Requirements
+
+You will generate a total of **four line plots**:
+1.  Fruit consumption over time (Men)
+2.  Fruit consumption over time (Women)
+3.  Dairy consumption over time (Men)
+4.  Dairy consumption over time (Women)
+
+Each plot must adhere to the following requirements:
+* Each food product (e.g., 'Apples', 'Cheese') must be represented by a unique line with its own **color** and **line style**.
+* All plots must have clearly labeled **x and y axes** (e.g., 'Time Period', 'Consumption in Pounds').
+* Include a **legend** on each plot to identify which line corresponds to which product.
+* The **data source and URL** must be included as text below each graph.
+
+### 4. Analysis and Captions
+
+* Below each of the four plots, add a Markdown cell in your Jupyter Notebook.
+* In this cell, write a **2-sentence caption** summarizing the key insights from the plot.
+* The caption should highlight a notable trend, comparison, or interesting observation that isn't immediately obvious from the title or legend.
+
+### Data Location Hint
+
+As a starting point, note that for **Men**, the mean consumption data (in pounds) can be found in the **7th column**, starting after the **77th row** in the source sheets. You will need to inspect the data to find the corresponding locations for Women and to verify all data points.
