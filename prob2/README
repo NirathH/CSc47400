@@ -1,0 +1,22 @@
+---
+
+## Problem 2: Make Bar Graphs in Python
+
+### Task
+
+Use the cleaned data frames from Problem 1. For each fruit and dairy product, compute the percent increase or decrease in consumption from the earliest time period (1994-1998) to the latest time period (2007-2008).
+
+You will create **two bar charts** to visualize these changes:
+1.  Percent change in consumption for Men.
+2.  Percent change in consumption for Women.
+
+### Requirements
+
+Each bar chart must meet the following criteria:
+
+* **Grouped Categories:** The bars representing **fruit products** and **dairy products** must be grouped separately. Add a noticeable space on the chart to distinguish between the two categories.
+* **Sorted Bars:** Within each category (fruit and dairy), the bars must be sorted in order from the largest percentage decrease to the largest percentage increase.
+* **X-Axis Labels:**
+    * Instead of a legend, use the x-axis to label each bar with its corresponding product name.
+    * The x-axis labels must be rotated at a **45-degree angle** to ensure they are readable and do not overlap.
+* **Y-Axis Label:** The y-axis should be clearly labeled to indicate it represents the "Percent Change (%)".
