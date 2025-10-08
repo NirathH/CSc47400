@@ -1,0 +1,33 @@
+---
+
+## Problem 3: Data Set Types & IPython Slideshow
+
+### Task
+
+For this problem, you will find an example visualization (as an image) for six different types of data sets. The final result will be presented as an interactive slideshow created from a Jupyter Notebook.
+
+Find a clear visual example for each of the following data types:
+1.  1D Time Series
+2.  2D Scalar Field
+3.  3D Scalar Field
+4.  2D Vector Field
+5.  3D Shape
+6.  Graph (that is not a tree)
+
+### Requirements
+
+#### 1. Presentation Format
+
+* **Jupyter Slideshow:** Your final submission should be an HTML/JS slideshow exported from your Jupyter Notebook.
+    * Watch this tutorial to learn how: [Jupyter Notebook Presentations](https://mljar.com/blog/jupyter-notebook-presentation/)
+* **Displaying Images:** You must collect and download the images you find. Display them within the notebook using the following commands:
+    ```python
+    from IPython.display import display, Image
+    display(Image(filename='your-image-filename.png'))
+    ```
+
+#### 2. Content for Each Example
+
+* For each of the six data types, create a slide (or a few slides) that includes:
+    1.  The example image you found.
+    2.  A short text explanation (~2-3 sentences) describing how the image visualizes that specific data type. Your explanation should clearly state **what the data is** (e.g., temperature, stock prices, wind speed) and **how the visualization represents it** as the given data type.
